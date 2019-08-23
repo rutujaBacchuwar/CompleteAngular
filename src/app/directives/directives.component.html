@@ -1,0 +1,39 @@
+<!-- If block -->
+
+<h2 *ngIf="displayName">
+  Welcome to stackroute!!!
+</h2>
+
+<!-- If else -->
+
+<h2 *ngIf="displayName; else elseBlock">
+  Welcome to stackroute!!!
+</h2>
+
+<ng-template #elseBlock>
+  <h2>Name is hidden</h2>
+</ng-template>
+<br>
+<hr>
+<!-- ngSwitch -->
+
+<span [ngSwitch]="color">
+  <p *ngSwitchCase="'red'">
+    you picked red
+  </p>
+  <p *ngSwitchCase="'blue'">
+    you picked blue
+  </p>
+  <p *ngSwitchDefault>
+    default statement
+  </p>
+</span>
+
+<hr>
+<!-- ngFor -->
+
+<div *ngFor="let color of colors; index as i">
+
+  <h2>{{i+1}} {{color}}</h2>
+</div>
+

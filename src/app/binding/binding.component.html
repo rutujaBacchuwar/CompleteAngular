@@ -1,0 +1,28 @@
+<!-- String Interpolation -->
+
+<h1>Welcome {{name}} !!!</h1>
+<h3>{{siteURL}}</h3>
+
+<!-- Property  Binding -->
+
+<input [disabled]="false" type="text" value="Rutu">
+
+<!-- Event binding -->
+
+<br>
+<br>
+<hr>
+
+<button (click)="onClick1()">What is Angular?</button>
+{{What}}
+
+<br>
+<br>
+<button (click)="onClick2()">Why Angular?</button>
+{{Why}}
+<br>
+<br>
+<!-- Two way binding -->
+
+<input [(ngModel)]="name1" type="text">
+{{name1}}

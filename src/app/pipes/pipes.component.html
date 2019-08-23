@@ -1,0 +1,43 @@
+
+
+<!-- String pipes -->
+<h2> {{name | lowercase }}</h2>
+<h2> {{name | uppercase }}</h2>
+<h2> {{name | titlecase }}</h2>
+<h2> {{name | slice:3:5 }}</h2>
+<h2> {{person | json }}</h2>
+
+<!-- Number pipes -->
+
+<h2>{{5.678 | number:'1.2-3'}}</h2>
+
+<h2>{{5.678 | number:'3.4-5'}}</h2>
+
+<h2>{{5.678 | number:'1.1-2'}}</h2>
+
+<!-- percent pipe -->
+
+<h2>{{0.25 | percent}}</h2>
+
+<!-- Currency pipes -->
+
+
+<h2>{{0.25 | currency}}</h2>
+
+
+<h2>{{0.25 | currency:'GBP'}}</h2>
+
+
+
+<h2>{{0.25 | currency:'INR':'code'}}</h2>
+
+<!-- Date pipes -->
+
+<h2>{{dateNow }}</h2>
+
+<h2>{{ dateNow | date:'short' }}</h2>
+
+<h2>{{ dateNow | date:'shortDate' }}</h2>
+
+<h2>{{ dateNow | date:'shortTime' }}</h2>
+
